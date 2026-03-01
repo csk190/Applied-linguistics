@@ -8,7 +8,7 @@ st.set_page_config(page_title="Readings and in-class discussion")
 st.caption("Readings and discussions")
 
 # 1. Define the tab names
-tab_labels = ["🏠 Reading list", "📂 Discussions", "⚙️ In-class presentation"]
+tab_labels = ["🏠 Reading list", "💦 In-class presentation", "📂 Discussions", ]
 
 # 2. Create the tabs
 tab1, tab2, tab3 = st.tabs(tab_labels)
@@ -30,11 +30,8 @@ with tab1:
       📗 Spplementary book: _An Introduction to Applied Linguistics_ (2007; 2nd ed.) by A. Davies, Edinburgh University Press.
       """)
 
-with tab2:
-    st.header("Discussions")
-    st.info("This is where your GitHub repositories will be listed.")
 
-with tab3:
+with tab2:
     # st.caption("Fetching the latest documentation from Github [Collaboration26](https://github.com/MK316/Collaboration26).")
 
     # ✅ Use the RAW URL to get the text content directly
@@ -51,4 +48,6 @@ with tab3:
     except Exception as e:
         st.error(f"An error occurred while fetching the file: {e}")
 
-
+with tab3:
+    st.header("Discussions")
+    st.info("This is where your GitHub repositories will be listed.")
