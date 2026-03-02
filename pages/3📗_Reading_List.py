@@ -30,7 +30,6 @@ with tab1:
       📗 Spplementary book: _An Introduction to Applied Linguistics_ (2007; 2nd ed.) by A. Davies, Edinburgh University Press.
       """)
 with tab2:
-    st.markdown("### Core Idea")
     
     # 1. GitHub Raw URL 설정 (blob 대신 raw.githubusercontent.com 사용)
     # 주의: 링크 주소에서 'blob/'을 삭제하고 도메인을 변경해야 합니다.
