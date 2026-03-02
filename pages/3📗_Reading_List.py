@@ -48,7 +48,7 @@ with tab2:
         st.error(f"오류가 발생했습니다: {e}")
 
 with tab3:
-    # st.caption("Fetching the latest documentation from Github [Collaboration26](https://github.com/MK316/Collaboration26).")
+    st.caption("Fetching the latest documentation from Github [Collaboration26](https://github.com/MK316/Collaboration26).")
 
     # ✅ Use the RAW URL to get the text content directly
     readme_url = "https://raw.githubusercontent.com/MK316/Collaboration26/main/README.md"
