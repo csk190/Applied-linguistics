@@ -14,8 +14,8 @@ API_BASE = f"https://api.github.com/repos/{OWNER}/{REPO}/contents"
 
 SLIDE_SETS = {
     "Intro": {"folder": "lectureslides/introduction"},
-    "Translanguage": {"folder": "lectureslides/translanguage"},
-    "Ch 3": {"folder": "lectureslides/ch03"},
+    "Reading#1 Translanguage": {"folder": "lectureslides/translanguage"},
+    "Reading#2 Aligning": {"folder": "lectureslides/ch03"},
 }
 
 # ---------- Helpers ----------
