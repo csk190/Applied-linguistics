@@ -29,6 +29,8 @@ with tab1:
     
       📗 Spplementary book: _An Introduction to Applied Linguistics_ (2007; 2nd ed.) by A. Davies, Edinburgh University Press.
       [Book cover](https://pasca.uns.ac.id/s3linguistik/wp-content/uploads/sites/44/2016/10/an-introduction-to-applied-linguistics.pdf)
+
+      + [Chapter 1 slides](https://github.com/MK316/Applied-linguistics/raw/main/lectureslides/chapter1/CH01_Slides.pdf): History and 'definitions'
       """)
 with tab2:
     
