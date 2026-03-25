@@ -98,10 +98,13 @@ CLASS_VIDEOS = {
 # Reading Summary 파일 목록 (파일명이 정확해야 함)
 SUMMARY_FILES = {
     "Select a summary...": None,
-    "Reading #1: Translanguaging (Li, 2018)": "Reading01_summary.md",
-    "Reading #2: Alignment Issues (Curry, 2025)": "Reading02_summary.md",
-    "Reading #3: Computational Thinking (Jacob, 2018)": "Reading03_summary.md",
-    "Reading #5: AI in Higher Education (Zawacki, 2019)": "Reading05_summary.md",
+    "Introduction: Defining AL (Davies, 2014)": "Chapter01.md",
+    "Reading #1: Translanguaging (Li, 2018)": "Reading01.md",
+    "Reading #2: Alignment Issues (Curry, 2025)": "Reading02.md",
+    "Reading #3: Computational Thinking (Jacob, 2018)": "Reading03.md",
+    "Reading #4: Computational Thinking (Jacob, 2018)": "Reading04.md",
+    "Reading #5: Computational Thinking (Jacob, 2018)": "Reading05.md",
+    "Reading #6: Computational Thinking (Jacob, 2018)": "Reading06.md",
 }
 
 # --- 2. 탭 생성 ---
