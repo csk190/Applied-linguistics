@@ -108,7 +108,10 @@ CLASS_VIDEOS = {
         "url": "https://youtu.be/bRVTDYAfj3M",
         "caption": "인공지능 시대의 새로운 문해력 정의 및 접근방식",
     },  
-    
+     "Week 05 . Systematic review of research on artificial intelligence applications in higher education": {
+        "url": "https://www.youtube.com/watch?v=4Ino7xIV8So",
+        "caption": " 고등교육 인공지능 활용에 관한 체계적 고찰",
+    },
 }
 
 # ---------- "Tabs" selector (segmented if available; fallback to radio) ----------
