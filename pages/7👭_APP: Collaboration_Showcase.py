@@ -25,10 +25,11 @@ with tab1:
     # 아래 url 부분에 실제 GitHub raw md 주소를 넣으면 됨
     PROJECTS = {
         "Select a project": None,
-        "Pair 1 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project1.md",
-        "Pair 2 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project2.md",
-        "Pair 3 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project3.md",
-        "Pair 4 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project4.md",
+        "Overview & guidelines": "https://github.com/MK316/Collaboration26/blob/main/mini-project/readme.md",
+        "Sample - Multi-language TTS": "https://raw.githubusercontent.com/USERNAME/REPO/main/project2.md",
+        "Pair 1 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project2.md",
+        "Pair 2 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project3.md",
+        "Pair 3 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project4.md",
     }
 
     selected_project = st.selectbox(
