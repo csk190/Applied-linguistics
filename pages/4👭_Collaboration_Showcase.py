@@ -42,12 +42,18 @@ with tab1:
     md_url = PROJECTS[selected_project]
 
     if md_url:
-        st.markdown("### Project overview")
-        md_text = load_markdown_from_url(md_url)
-        st.markdown(md_text)
+        if selected_project == "Giving Feedback":
+            st.markdown("### Giving Feedback")
+            st.write("Click the button below to open the peer feedback form.")
+            st.link_button("Open Feedback Form", md_url)
 
-        st.divider()
-        st.caption("The markdown file above can include the app link.")
+        else:
+            st.markdown("### Project overview")
+            md_text = load_markdown_from_url(md_url)
+            st.markdown(md_text)
+
+            st.divider()
+            st.caption("The markdown file above can include the app link.")
 
 with tab2:
     st.write("Collaboration apps will be displayed here in time.")
