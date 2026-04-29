@@ -5,7 +5,7 @@ st.set_page_config(page_title="Learning Tools", layout="wide")
 
 st.caption("Making learning tools and share codes")
 
-tab1, tab2, tab3 = st.tabs(["1. mini project", "2. Focus apps", "3. Lesson plan"])
+tab1, tab2, tab3 = st.tabs(["1. mini project", "2. APP showcase (selected)", "3. Final Project: Lesson plan"])
 
 # -----------------------------
 # Helper: GitHub raw markdown load
