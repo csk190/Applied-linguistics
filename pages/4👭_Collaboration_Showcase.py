@@ -27,9 +27,9 @@ with tab1:
         "Select a project": None,
         "Overview & guidelines": "https://raw.githubusercontent.com/MK316/Collaboration26/main/mini-project/readme.md",
         "Sample - Multi-language TTS": "https://raw.githubusercontent.com/MK316/Collaboration26/main/mini-project/sample.md",
-        "🍩 Group 1 - Sentence by Sentence TTS": "https://github.com/MK316/Collaboration26/raw/main/mini-project/miniproject-sample.md",
-        "🍩 Group 2 - Verb Learning": "https://github.com/JHC0531/Mini-project/raw/main/README.md",
-        "Group 3 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project4.md",
+        "🍩 Project 1 - Sentence by Sentence TTS": "https://github.com/MK316/Collaboration26/raw/main/mini-project/miniproject-sample.md",
+        "🍩 Project 2 - Verb Learning": "https://github.com/JHC0531/Mini-project/raw/main/README.md",
+        "Project 3 - Project title": "https://raw.githubusercontent.com/USERNAME/REPO/main/project4.md",
     }
 
     selected_project = st.selectbox(
