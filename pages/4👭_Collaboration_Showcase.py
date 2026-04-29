@@ -5,7 +5,11 @@ st.set_page_config(page_title="Learning Tools", layout="wide")
 
 st.caption("Making learning tools and share codes")
 
-tab1, tab2, tab3 = st.tabs(["1. mini project", "2. APP showcase (selected)", "3. Final Project: Lesson plan"])
+tab1, tab2, tab3 = st.tabs([
+    "1. mini project",
+    "2. APP showcase (selected)",
+    "3. Final Project: Lesson plan"
+])
 
 # -----------------------------
 # Helper: GitHub raw markdown load
@@ -18,11 +22,10 @@ def load_markdown_from_url(url):
     except requests.exceptions.RequestException as e:
         return f"Failed to load markdown file.\n\n{e}"
 
+
 with tab1:
     st.write("Mini project in pairs.")
 
-    # 학생 프로젝트 4개 틀
-    # 아래 url 부분에 실제 GitHub raw md 주소를 넣으면 됨
     PROJECTS = {
         "Select a project": None,
         "Overview & guidelines": "https://raw.githubusercontent.com/MK316/Collaboration26/main/mini-project/readme.md",
@@ -36,7 +39,8 @@ with tab1:
     selected_project = st.selectbox(
         "Choose a mini project",
         options=list(PROJECTS.keys()),
-        index=0
+        index=0,
+        key="mini_project_select"
     )
 
     md_url = PROJECTS[selected_project]
@@ -46,7 +50,6 @@ with tab1:
             st.markdown("### Giving Feedback")
             st.write("Click the button below to open the peer feedback form.")
             st.link_button("Open Feedback Form", md_url)
-
         else:
             st.markdown("### Project overview")
             md_text = load_markdown_from_url(md_url)
@@ -55,8 +58,46 @@ with tab1:
             st.divider()
             st.caption("The markdown file above can include the app link.")
 
+
 with tab2:
     st.write("Collaboration apps will be displayed here in time.")
 
+
 with tab3:
-    st.write("Collaboration apps will be displayed here in time.")
+    st.write("Final project: 50-minute lesson plan with a customized app.")
+
+    FINAL_PROJECTS = {
+        "Select a final project": None,
+        "Overview & guidelines": "https://github.com/MK316/Collaboration26/raw/main/final-project/README.md",
+        "Sample final project": "https://raw.githubusercontent.com/MK316/Collaboration26/main/final-project/sample.md",
+        "Project 1": "https://raw.githubusercontent.com/USERNAME/REPO/main/README.md",
+        "Project 2": "https://raw.githubusercontent.com/USERNAME/REPO/main/README.md",
+        "Project 3": "https://raw.githubusercontent.com/USERNAME/REPO/main/README.md",
+        "Project 4": "https://raw.githubusercontent.com/USERNAME/REPO/main/README.md",
+        "Project 5": "https://raw.githubusercontent.com/USERNAME/REPO/main/README.md",
+        "Project 6": "https://raw.githubusercontent.com/USERNAME/REPO/main/README.md",
+        "Project 7": "https://raw.githubusercontent.com/USERNAME/REPO/main/README.md",
+        "Giving Feedback": "https://forms.gle/5QLKafV9BxNonms69"
+    }
+
+    selected_final_project = st.selectbox(
+        "Choose a final project",
+        options=list(FINAL_PROJECTS.keys()),
+        index=0,
+        key="final_project_select"
+    )
+
+    final_md_url = FINAL_PROJECTS[selected_final_project]
+
+    if final_md_url:
+        if selected_final_project == "Giving Feedback":
+            st.markdown("### Giving Feedback")
+            st.write("Click the button below to open the final project peer feedback form.")
+            st.link_button("Open Feedback Form", final_md_url)
+        else:
+            st.markdown("### Final project overview")
+            final_md_text = load_markdown_from_url(final_md_url)
+            st.markdown(final_md_text)
+
+            st.divider()
+            st.caption("The markdown file above can include the lesson plan and app link.")
